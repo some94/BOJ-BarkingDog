@@ -8,12 +8,11 @@ public class BOJ_1267 {
         Scanner sc = new Scanner(System.in);
 
         int n = sc.nextInt();
-        int sec = 0;
         int ySum = 0;
         int mSum = 0;
 
         for(int i = 0; i < n; i++) {
-            sec = sc.nextInt();
+            int sec = sc.nextInt();
             ySum += ((sec / 30) + 1) * 10;
             mSum += ((sec / 60) + 1) * 15;
         }
